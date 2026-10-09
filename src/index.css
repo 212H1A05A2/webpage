@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, .font-fredoka {
+    font-family: 'Fredoka', 'Outfit', sans-serif;
+  }
+}
+
+/* Light mode styles */
+html.light body {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+html.light .bg-slate-900 {
+  background-color: #ffffff;
+  color: #0f172a;
+  border-color: #e2e8f0;
+}
+
+html.light .bg-slate-950 {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+html.light .bg-slate-800 {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  border-color: #cbd5e1;
+}
+
+html.light .text-slate-400 {
+  color: #64748b;
+}
+
+html.light .text-white {
+  color: #0f172a;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
